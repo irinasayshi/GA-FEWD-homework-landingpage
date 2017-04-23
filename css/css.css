@@ -1,0 +1,252 @@
+/*Relaxr Landing Page: Part 1
+==================
+
+We'll be working on this site for the next three classes, just a heads up.
+
+For today, we'll be making a simplified version of the site which uses only one column. Your job is to build out the CSS - using the information below - for the page!
+
+---
+
+benefits background color: #f0efef
+yellow: #f9e42e
+dark blue: #033048
+light grey: #606161
+almost black: #121212
+
+font-weight light = 300
+font-weight semibold = 600
+font-weight bold = 700
+font-weight extrabold = 800
+
+Font: Open Sans (Google Font: https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans)
+Weight: Light, Light Italic, Semibold, Extrabold
+
+"Relaxr" - Extra bold, 24px
+"Get piece of mind with a single tap" - Semibold, 24px
+"Get it Now" - Extra bold, 14px. 5px border radius
+"Benefits" - Semibold, 20px
+"The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be." - Light, 13px
+• Schedule meetings for you
+• Excel automation to complete your work for you
+• Responds to emails on your behalf
+• Does all your work for you with our revolutionary AI technology" - Light, 13px
+
+"“Relaxr changed my life. I’ve been able to travel the world, spend limited time working and my boss keeps thanking me for crushing work.”" - Light Italic, 18px
+"- Amanda, Intuit " - semibold, 18px
+
+"Sign Up Now!" - extra bold, 12px, 5px border radius
+
+Relaxr - extra bold, 24px
+"Copyright 2015. Relaxr." - 9px, semibold
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900,100italic);
+
+body {
+	font-family: 'Open Sans', Arial, serif;
+}
+
+/* HEADER */
+
+.header-content {
+	background: url('../images/header_bg.jpg') no-repeat center;
+	height: 500px;
+	width: auto;
+	box-shadow: inset 0 0 0 1000px rgba(25, 42, 59,.4);
+}
+
+header-content::before {
+	background: linear-gradient(to right, rgba(50,77,101,0.08) 0%, rgba(25,42,59,1) 100%);
+	/*content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 100%;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#324d65,#192a3b);
+	opacity: .4;*/
+}
+
+.site-title {
+	font-weight: 800;
+	font-size: 24px;
+	padding-left: 100px;
+	padding-top: 25px;
+	color: white;
+}
+
+.benefits {
+	height: 700px;
+	background-color: #f0efef;
+}
+
+.header-slogan {
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	padding-top: 50px;
+	font-weight: 600;
+}
+
+.header-button {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.header-button a {
+	font-family: 'Open Sans', Arial, serif;
+	text-decoration: none;
+	font-weight: 800;
+	background-color: #f9e42e;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 35px;
+	padding-left: 35px;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #033048;
+	letter-spacing: .5px;
+}
+
+/* BENEFITS */
+
+.benefits {
+	background-color: #f0efef;
+	height: 300px;
+	padding-left: 100px;
+	padding-top: 50px;
+}
+
+.benefits h3 {
+	font-size: 20px;
+	color: #033048;
+	font-weight: 600;
+}
+
+.benefits .benefits-list,p {
+	font-size: 13px;
+	width: 400px;
+	color: #606161;
+	font-weight: 300;
+}
+
+.benefits ul {
+	margin-top: 25px;
+	list-style-type: disc;
+	padding-left: 30px;
+}
+
+.benefits p {
+	padding-top: 15px;
+}
+
+/* QUOTE */
+
+.quotes-section {
+	height: 300px;
+	background-color: #033048;
+	background: url('../images/testimonial_bg.jpg');
+	box-shadow: inset 0 0 0 1000px rgba(5,13,29,.2);
+}
+
+.center-quote {
+	/*margin-top: 50%;*/ /*Adding this shifted everything down, including the background. Why?*/
+	/*top: 50%;*/
+	padding-top: 100px;
+	line-height: 25px;
+}
+
+.quote {
+	font-style: italic;
+	font-weight: 100;
+	font-size: 18px;
+	color: white;
+	width: 500px;
+	text-align: center;
+	margin: auto;
+	/*margin-top: 50%;*/ /*Adding this shifted everything down, including the background. Why?*/
+
+}
+
+.quote-name {
+	font-size: 18px;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+}
+
+/* YELLOW */
+
+.yellow-banner {
+	height: 70px;
+	background-color: #f9e42e;
+}
+
+.cta-signup {
+	padding-top: 25px;
+	text-align: center;
+}
+
+.cta-signup a {
+	font-family: 'Open Sans', Arial, serif;
+	text-decoration: none;
+	font-weight: 800;
+	background-color: #033048;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-right: 35px;
+	padding-left: 35px;
+	border-radius: 5px;
+	font-size: 12px;
+	color: white;
+	letter-spacing: .5px;
+}
+
+/* FOOTER */
+
+footer {
+	height: 240px;
+	background-color: #121212;
+}
+
+footer h1 {
+	color: #f9e42e;
+	font-size: 24px;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.site-footer {
+	font-weight: 800;
+}
+
+.social-media {
+	text-align: center;
+	margin-top: 15px;
+}
+
+/*.social-media a {
+	text-align: center;
+	padding: 8px;
+}*/
+
+.twitter {
+	padding-right: 20px;
+	padding-bottom: 50px;
+}
+
+footer .copyright {
+	text-align: center;
+	color: white;
+	font-size: 9px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	bottom: 0;
+	letter-spacing: 1px;
+}
+
+footer .twitter {
+	width: 43px;
+	display: inline-block;
+}
